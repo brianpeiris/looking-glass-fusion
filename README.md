@@ -4,6 +4,11 @@ An Addin for Autodesk Fusion 360 that lets you view your CAD design on a Looking
 
 ## Usage
 
-Download this repo's ZIP file, extract it to a location of your choosing, then add and run the addin in Fusion's "Tools -> Addins" dialog.
+1. Download this [repo's ZIP file](https://github.com/brianpeiris/looking-glass-fusion/archive/refs/heads/main.zip)
+2. Extract it to a location of your choosing
+3. Add the addin in Fusion's "Tools -> Addins" dialog
+4. Run the addin
+5. Visit http://localhost:3000 in your browser
+6. Move the browser window to your Looking Glass display
 
-Once the addin is running, you can visit http://localhost:3000 in your browser, and move the browser window to your looking glass display.
+You can use your mouse to rotate and zoom in on the model in the display.
