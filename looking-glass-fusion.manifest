@@ -1,0 +1,13 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"addin",
+	"id":	"f543aeae-c699-4621-b6c6-707d13583470",
+	"author":	"Brian Peiris",
+	"description":	{
+		"":	"A live viewer for the Looking Glass 3D display"
+	},
+	"version":	"",
+	"runOnStartup":	false,
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
