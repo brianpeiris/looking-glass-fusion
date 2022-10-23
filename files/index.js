@@ -1,7 +1,10 @@
 import * as THREE from "three";
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js";
 import { VRButton } from "three/examples/jsm/webxr/VRButton.js";
-import { LookingGlassWebXRPolyfill, LookingGlassConfig } from "@lookingglass/webxr";
+import {
+  LookingGlassWebXRPolyfill,
+  LookingGlassConfig,
+} from "@lookingglass/webxr";
 import FileWatcher from "./FileWatcher.js";
 
 // Setup the rendering config
@@ -30,7 +33,8 @@ const directionalLight = new THREE.DirectionalLight();
 // This is a significant performance tradeoff, disable shadows to increase framerate.
 directionalLight.castShadow = true;
 directionalLight.shadow.blur = 1;
-directionalLight.shadow.mapSize.width = directionalLight.shadow.mapSize.height = renderer.capabilities.maxTextureSize;
+directionalLight.shadow.mapSize.width = directionalLight.shadow.mapSize.height =
+  renderer.capabilities.maxTextureSize;
 directionalLight.shadow.camera.zoom = 5;
 directionalLight.shadow.camera.updateProjectionMatrix();
 
