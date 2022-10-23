@@ -5,6 +5,7 @@
     "three": "^0.145.0"
   },
   "scripts": {
+    "build": "esbuild --bundle --outfile=files/bundle.js files/index.js",
     "start:esbuild": "esbuild --sourcemap --bundle --outfile=files/bundle.js --watch files/index.js"
   }
 }
