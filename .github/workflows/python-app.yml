@@ -1,0 +1,21 @@
+name: Python
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - run: |
+        python -m pip install --upgrade pip
+        pip install flake8 black
+    - run: flake8 .
+    - run: black --check .
