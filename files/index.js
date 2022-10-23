@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { STLLoader } from "./STLLoader";
+import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js";
 import { VRButton } from "three/examples/jsm/webxr/VRButton.js";
 import { LookingGlassWebXRPolyfill, LookingGlassConfig } from "@lookingglass/webxr"
 import FileWatcher from "./FileWatcher.js";
