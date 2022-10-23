@@ -84,5 +84,5 @@ resize(); // Once right away for good measure (pun intended)
 // Add a file watcher to reload our model as edits are made in Fusion360
 new FileWatcher("export.stl", loadFile);
 
-// Finally add the all important XHR button.
+// Finally add the all important WebXR button.
 document.body.append(VRButton.createButton(renderer));
