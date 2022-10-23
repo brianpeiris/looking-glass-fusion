@@ -17,4 +17,5 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
+    - run: diff -u <(npx prettier files/index.js) files/index.js
     - run: npm test
