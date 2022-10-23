@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>looking-glass-fusion</title>
     <style>
-        html, body { margin: 0; overflow: hidden; cursor: crosshair;}
+        html, body { margin: 0; overflow: hidden; cursor: crosshair; font-family: sans-serif; }
+        p { padding: 10px; }
+        #VRButton { font-size: 150% !important; color: black !important; }
     </style>
+    <p>
+      You may notice the looking glass window stops responding to user input.
+      To avoid this do not minimize this window after starting the WebXR session and do not place it underneath the WebXR session.
+    </p>
 </head>
 <body>
-   <script type="module" src="index.js"></script> 
+   <script src="bundle.js"></script>
 </body>
 </html>

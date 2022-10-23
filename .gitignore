@@ -1,2 +1,6 @@
 .env
-.vscode/settings.json
+.vscode/**
+node_modules
+files/export.stl
+files/firstRun.dat
+log.txt

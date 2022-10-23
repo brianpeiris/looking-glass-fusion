@@ -4,7 +4,7 @@ export default class FileWatcher{
         this.onChange = onChange;
         this.lastModified = null;
 
-        setInterval(this.checkFile.bind(this), 500)
+        setInterval(this.checkFile.bind(this), 1000)
     }
     async checkFile() {
         const response = await fetch(this.file + `?_=${Date.now()}`, {method: "HEAD"});
