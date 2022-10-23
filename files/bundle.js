@@ -21191,7 +21191,7 @@
     }
   }
 
-  // files/STLLoader.js
+  // node_modules/three/examples/jsm/loaders/STLLoader.js
   var STLLoader = class extends Loader {
     constructor(manager) {
       super(manager);
@@ -26932,4 +26932,3 @@ host this content on a secure origin for the best user experience.
  * @version 0.0.8
  * @license SEE LICENSE IN LICENSE.md
  */
-//# sourceMappingURL=bundle.js.map
