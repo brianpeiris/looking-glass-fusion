@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@lookingglass/webxr": "^0.2.1",
+    "esbuild": "^0.14.49",
+    "three": "^0.145.0"
+  },
+  "scripts": {
+    "start:esbuild": "esbuild --sourcemap --bundle --outfile=files/bundle.js --watch files/index.js"
+  }
+}

@@ -74,6 +74,14 @@ class CommandHandler(adsk.core.ApplicationCommandEventHandler):
 
 handlers = []
 
+def firstRun():
+    files_dir = os.path.join(addin_path, "files")
+    first_run = os.path.join(files_dir, "firstRun.dat")
+    res = os.path.exists(first_run) == False
+    with open(first_run, 'w') as file:
+        pass
+    return res   
+
 def run(context):
     try:
         log("Starting addin")
@@ -84,7 +92,8 @@ def run(context):
         ui.commandTerminated.add(commandTerminatedHandler)
         handlers.append(commandTerminatedHandler)
 
-        ui.messageBox("looking-glass-fusion running at\nhttp://localhost:{}".format(server_port))
+        if firstRun():        
+            ui.messageBox("looking-glass-fusion running at\nhttp://localhost:{}".format(server_port), "First run prompt")
 
     except:
         log(traceback.format_exc())

@@ -12,3 +12,11 @@ An Addin for Autodesk Fusion 360 that lets you view your CAD design on a Looking
 6. Move the browser window to your Looking Glass display
 
 You can use your mouse to rotate and zoom in on the model in the display.
+
+## Developing
+The project includes the complete bundle files you should not need to do anything to run it. However for development
+you will need to retrieve the sources for the libraries used to do that run:
+> `npm install`
+
+This project uses esbuild to start this run:
+> `npm run start:esbuild`
