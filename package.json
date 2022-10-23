@@ -1,11 +1,19 @@
 {
+  "private": true,
+  "scripts": {
+    "build": "esbuild --bundle --outfile=files/bundle.js files/index.js",
+    "start:esbuild": "esbuild --sourcemap --bundle --outfile=files/bundle.js --watch files/index.js",
+    "test": "npm run test:eslint && npm run test:prettier",
+    "test:eslint": "eslint files/index.js",
+    "test:prettier": "prettier --check files/index.js"
+  },
   "dependencies": {
     "@lookingglass/webxr": "^0.2.1",
     "esbuild": "^0.14.49",
     "three": "^0.145.0"
   },
-  "scripts": {
-    "build": "esbuild --bundle --outfile=files/bundle.js files/index.js",
-    "start:esbuild": "esbuild --sourcemap --bundle --outfile=files/bundle.js --watch files/index.js"
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1"
   }
 }
